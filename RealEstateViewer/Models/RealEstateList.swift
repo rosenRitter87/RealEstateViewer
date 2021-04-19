@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct RealEstateList: Codable {
+    var items: [RealEstate]?
+    var totalCount: Int
+}

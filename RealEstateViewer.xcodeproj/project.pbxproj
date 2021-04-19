@@ -3,18 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9773BB16B1470AEC617D9037 /* Pods_RealEstateViewer_RealEstateViewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29004C90EA99F2E551F0EAC0 /* Pods_RealEstateViewer_RealEstateViewerUITests.framework */; };
 		A5345D81262AEDDD00AD20B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345D80262AEDDD00AD20B1 /* AppDelegate.swift */; };
 		A5345D83262AEDDD00AD20B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345D82262AEDDD00AD20B1 /* SceneDelegate.swift */; };
-		A5345D85262AEDDD00AD20B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345D84262AEDDD00AD20B1 /* ViewController.swift */; };
 		A5345D88262AEDDD00AD20B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5345D86262AEDDD00AD20B1 /* Main.storyboard */; };
 		A5345D8A262AEDDF00AD20B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5345D89262AEDDF00AD20B1 /* Assets.xcassets */; };
 		A5345D8D262AEDDF00AD20B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5345D8B262AEDDF00AD20B1 /* LaunchScreen.storyboard */; };
 		A5345D98262AEDDF00AD20B1 /* RealEstateViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345D97262AEDDF00AD20B1 /* RealEstateViewerTests.swift */; };
 		A5345DA3262AEDDF00AD20B1 /* RealEstateViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DA2262AEDDF00AD20B1 /* RealEstateViewerUITests.swift */; };
+		A5345DB4262AEE4A00AD20B1 /* RealEstateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DB3262AEE4A00AD20B1 /* RealEstateViewController.swift */; };
+		A5345DBC262AEE7F00AD20B1 /* RealEstateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DBB262AEE7F00AD20B1 /* RealEstateListViewController.swift */; };
+		A5345DC4262AFE5F00AD20B1 /* RealEstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DC3262AFE5F00AD20B1 /* RealEstate.swift */; };
+		A5345DD6262B003D00AD20B1 /* RealEstateServicesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DD5262B003D00AD20B1 /* RealEstateServicesClient.swift */; };
+		A5345DDB262B00FE00AD20B1 /* RealEstateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DDA262B00FE00AD20B1 /* RealEstateList.swift */; };
+		A5345DE1262B051500AD20B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DE0262B051500AD20B1 /* Constants.swift */; };
+		A5345DE9262B060700AD20B1 /* RealEstateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DE8262B060700AD20B1 /* RealEstateListViewModel.swift */; };
+		A5345DEE262B104300AD20B1 /* RealEstateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DED262B104300AD20B1 /* RealEstateTableViewCell.swift */; };
+		A5345DF3262B2FEC00AD20B1 /* RealEstateTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DF2262B2FEC00AD20B1 /* RealEstateTableViewCellViewModel.swift */; };
+		A5345DF8262C421800AD20B1 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DF7262C421800AD20B1 /* CacheManager.swift */; };
+		A5345DFD262C42C200AD20B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345DFC262C42C200AD20B1 /* Extensions.swift */; };
+		A5345E3C262D4FD900AD20B1 /* RealEstateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345E3B262D4FD900AD20B1 /* RealEstateViewModel.swift */; };
+		A5345E44262D69C500AD20B1 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345E43262D69C500AD20B1 /* LoaderView.swift */; };
+		A5345E49262D6A2900AD20B1 /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5345E48262D6A2900AD20B1 /* LoaderView.xib */; };
+		A5345E4E262D6DA700AD20B1 /* LoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5345E4D262D6DA700AD20B1 /* LoaderViewModel.swift */; };
+		C52C8564E5CB3A69F5A72DC9 /* Pods_RealEstateViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28A7102040BCA3C03CD5E0B /* Pods_RealEstateViewer.framework */; };
+		E5B6FB0C2B3FE573AD71C7D7 /* Pods_RealEstateViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F354D687305E39FD1D59562D /* Pods_RealEstateViewerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29004C90EA99F2E551F0EAC0 /* Pods_RealEstateViewer_RealEstateViewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateViewer_RealEstateViewerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41985B14C6B6AF25B14528C1 /* Pods-RealEstateViewer-RealEstateViewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateViewer-RealEstateViewerUITests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateViewer-RealEstateViewerUITests/Pods-RealEstateViewer-RealEstateViewerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		47F78CBFC5681FFECCEE7448 /* Pods-RealEstateViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateViewerTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateViewerTests/Pods-RealEstateViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D37D101E94DED5C619B8EC7 /* Pods-RealEstateViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateViewerTests.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateViewerTests/Pods-RealEstateViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E8669957D80ED56CD341A36 /* Pods-RealEstateViewer-RealEstateViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateViewer-RealEstateViewerUITests.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateViewer-RealEstateViewerUITests/Pods-RealEstateViewer-RealEstateViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DBFEA1A9A793008C66D5E32 /* Pods-RealEstateViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateViewer.release.xcconfig"; path = "Target Support Files/Pods-RealEstateViewer/Pods-RealEstateViewer.release.xcconfig"; sourceTree = "<group>"; };
+		965A998791F6D5488C6C964D /* Pods-RealEstateViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateViewer.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateViewer/Pods-RealEstateViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		A5345D7D262AEDDD00AD20B1 /* RealEstateViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstateViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5345D80262AEDDD00AD20B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5345D82262AEDDD00AD20B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5345D84262AEDDD00AD20B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5345D87262AEDDD00AD20B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5345D89262AEDDF00AD20B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5345D8C262AEDDF00AD20B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +72,23 @@
 		A5345D9E262AEDDF00AD20B1 /* RealEstateViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealEstateViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5345DA2262AEDDF00AD20B1 /* RealEstateViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateViewerUITests.swift; sourceTree = "<group>"; };
 		A5345DA4262AEDDF00AD20B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5345DB3262AEE4A00AD20B1 /* RealEstateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateViewController.swift; sourceTree = "<group>"; };
+		A5345DBB262AEE7F00AD20B1 /* RealEstateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateListViewController.swift; sourceTree = "<group>"; };
+		A5345DC3262AFE5F00AD20B1 /* RealEstate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstate.swift; sourceTree = "<group>"; };
+		A5345DD5262B003D00AD20B1 /* RealEstateServicesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateServicesClient.swift; sourceTree = "<group>"; };
+		A5345DDA262B00FE00AD20B1 /* RealEstateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateList.swift; sourceTree = "<group>"; };
+		A5345DE0262B051500AD20B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5345DE8262B060700AD20B1 /* RealEstateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateListViewModel.swift; sourceTree = "<group>"; };
+		A5345DED262B104300AD20B1 /* RealEstateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateTableViewCell.swift; sourceTree = "<group>"; };
+		A5345DF2262B2FEC00AD20B1 /* RealEstateTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		A5345DF7262C421800AD20B1 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		A5345DFC262C42C200AD20B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A5345E3B262D4FD900AD20B1 /* RealEstateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateViewModel.swift; sourceTree = "<group>"; };
+		A5345E43262D69C500AD20B1 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		A5345E48262D6A2900AD20B1 /* LoaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
+		A5345E4D262D6DA700AD20B1 /* LoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewModel.swift; sourceTree = "<group>"; };
+		D28A7102040BCA3C03CD5E0B /* Pods_RealEstateViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F354D687305E39FD1D59562D /* Pods_RealEstateViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52C8564E5CB3A69F5A72DC9 /* Pods_RealEstateViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B6FB0C2B3FE573AD71C7D7 /* Pods_RealEstateViewerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9773BB16B1470AEC617D9037 /* Pods_RealEstateViewer_RealEstateViewerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EA5686D5FF8BDBF369245E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D28A7102040BCA3C03CD5E0B /* Pods_RealEstateViewer.framework */,
+				29004C90EA99F2E551F0EAC0 /* Pods_RealEstateViewer_RealEstateViewerUITests.framework */,
+				F354D687305E39FD1D59562D /* Pods_RealEstateViewerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5345D74262AEDDD00AD20B1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +136,8 @@
 				A5345D96262AEDDF00AD20B1 /* RealEstateViewerTests */,
 				A5345DA1262AEDDF00AD20B1 /* RealEstateViewerUITests */,
 				A5345D7E262AEDDD00AD20B1 /* Products */,
+				A6CB505D0F1E6BEA9B9906E8 /* Pods */,
+				7EA5686D5FF8BDBF369245E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +156,11 @@
 			children = (
 				A5345D80262AEDDD00AD20B1 /* AppDelegate.swift */,
 				A5345D82262AEDDD00AD20B1 /* SceneDelegate.swift */,
-				A5345D84262AEDDD00AD20B1 /* ViewController.swift */,
+				A5345DDF262B022B00AD20B1 /* Tools */,
+				A5345DC8262AFF6F00AD20B1 /* Services */,
+				A5345DC2262AFE3F00AD20B1 /* Models */,
+				A5345DC1262AEEE700AD20B1 /* ViewModels */,
+				A5345DC0262AEED000AD20B1 /* Views */,
 				A5345D86262AEDDD00AD20B1 /* Main.storyboard */,
 				A5345D89262AEDDF00AD20B1 /* Assets.xcassets */,
 				A5345D8B262AEDDF00AD20B1 /* LaunchScreen.storyboard */,
@@ -128,6 +187,69 @@
 			path = RealEstateViewerUITests;
 			sourceTree = "<group>";
 		};
+		A5345DC0262AEED000AD20B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5345DBB262AEE7F00AD20B1 /* RealEstateListViewController.swift */,
+				A5345DB3262AEE4A00AD20B1 /* RealEstateViewController.swift */,
+				A5345DED262B104300AD20B1 /* RealEstateTableViewCell.swift */,
+				A5345E43262D69C500AD20B1 /* LoaderView.swift */,
+				A5345E48262D6A2900AD20B1 /* LoaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5345DC1262AEEE700AD20B1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5345DE8262B060700AD20B1 /* RealEstateListViewModel.swift */,
+				A5345E3B262D4FD900AD20B1 /* RealEstateViewModel.swift */,
+				A5345DF2262B2FEC00AD20B1 /* RealEstateTableViewCellViewModel.swift */,
+				A5345E4D262D6DA700AD20B1 /* LoaderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A5345DC2262AFE3F00AD20B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5345DC3262AFE5F00AD20B1 /* RealEstate.swift */,
+				A5345DDA262B00FE00AD20B1 /* RealEstateList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5345DC8262AFF6F00AD20B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A5345DD5262B003D00AD20B1 /* RealEstateServicesClient.swift */,
+				A5345DF7262C421800AD20B1 /* CacheManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A5345DDF262B022B00AD20B1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A5345DE0262B051500AD20B1 /* Constants.swift */,
+				A5345DFC262C42C200AD20B1 /* Extensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A6CB505D0F1E6BEA9B9906E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				965A998791F6D5488C6C964D /* Pods-RealEstateViewer.debug.xcconfig */,
+				6DBFEA1A9A793008C66D5E32 /* Pods-RealEstateViewer.release.xcconfig */,
+				5E8669957D80ED56CD341A36 /* Pods-RealEstateViewer-RealEstateViewerUITests.debug.xcconfig */,
+				41985B14C6B6AF25B14528C1 /* Pods-RealEstateViewer-RealEstateViewerUITests.release.xcconfig */,
+				4D37D101E94DED5C619B8EC7 /* Pods-RealEstateViewerTests.debug.xcconfig */,
+				47F78CBFC5681FFECCEE7448 /* Pods-RealEstateViewerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5345DA7262AEDDF00AD20B1 /* Build configuration list for PBXNativeTarget "RealEstateViewer" */;
 			buildPhases = (
+				98A1C21C684C772655CDFF1A /* [CP] Check Pods Manifest.lock */,
 				A5345D79262AEDDD00AD20B1 /* Sources */,
 				A5345D7A262AEDDD00AD20B1 /* Frameworks */,
 				A5345D7B262AEDDD00AD20B1 /* Resources */,
+				14E03F42E38D599D2829FF83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5345DAA262AEDDF00AD20B1 /* Build configuration list for PBXNativeTarget "RealEstateViewerTests" */;
 			buildPhases = (
+				E080E63EA4EABF9C06ED1BB4 /* [CP] Check Pods Manifest.lock */,
 				A5345D8F262AEDDF00AD20B1 /* Sources */,
 				A5345D90262AEDDF00AD20B1 /* Frameworks */,
 				A5345D91262AEDDF00AD20B1 /* Resources */,
@@ -170,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5345DAD262AEDDF00AD20B1 /* Build configuration list for PBXNativeTarget "RealEstateViewerUITests" */;
 			buildPhases = (
+				BF99722F913B8EA972810EB8 /* [CP] Check Pods Manifest.lock */,
 				A5345D9A262AEDDF00AD20B1 /* Sources */,
 				A5345D9B262AEDDF00AD20B1 /* Frameworks */,
 				A5345D9C262AEDDF00AD20B1 /* Resources */,
+				D618076C4019D131A2651269 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5345D8D262AEDDF00AD20B1 /* LaunchScreen.storyboard in Resources */,
+				A5345E49262D6A2900AD20B1 /* LoaderView.xib in Resources */,
 				A5345D8A262AEDDF00AD20B1 /* Assets.xcassets in Resources */,
 				A5345D88262AEDDD00AD20B1 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +381,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14E03F42E38D599D2829FF83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealEstateViewer/Pods-RealEstateViewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealEstateViewer/Pods-RealEstateViewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealEstateViewer/Pods-RealEstateViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A1C21C684C772655CDFF1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealEstateViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF99722F913B8EA972810EB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealEstateViewer-RealEstateViewerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D618076C4019D131A2651269 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealEstateViewer-RealEstateViewerUITests/Pods-RealEstateViewer-RealEstateViewerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealEstateViewer-RealEstateViewerUITests/Pods-RealEstateViewer-RealEstateViewerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealEstateViewer-RealEstateViewerUITests/Pods-RealEstateViewer-RealEstateViewerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E080E63EA4EABF9C06ED1BB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealEstateViewerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5345D79262AEDDD00AD20B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5345D85262AEDDD00AD20B1 /* ViewController.swift in Sources */,
+				A5345DDB262B00FE00AD20B1 /* RealEstateList.swift in Sources */,
+				A5345DC4262AFE5F00AD20B1 /* RealEstate.swift in Sources */,
+				A5345E44262D69C500AD20B1 /* LoaderView.swift in Sources */,
+				A5345E4E262D6DA700AD20B1 /* LoaderViewModel.swift in Sources */,
 				A5345D81262AEDDD00AD20B1 /* AppDelegate.swift in Sources */,
+				A5345DE9262B060700AD20B1 /* RealEstateListViewModel.swift in Sources */,
+				A5345DF8262C421800AD20B1 /* CacheManager.swift in Sources */,
+				A5345DB4262AEE4A00AD20B1 /* RealEstateViewController.swift in Sources */,
+				A5345E3C262D4FD900AD20B1 /* RealEstateViewModel.swift in Sources */,
+				A5345DBC262AEE7F00AD20B1 /* RealEstateListViewController.swift in Sources */,
+				A5345DD6262B003D00AD20B1 /* RealEstateServicesClient.swift in Sources */,
+				A5345DFD262C42C200AD20B1 /* Extensions.swift in Sources */,
 				A5345D83262AEDDD00AD20B1 /* SceneDelegate.swift in Sources */,
+				A5345DE1262B051500AD20B1 /* Constants.swift in Sources */,
+				A5345DEE262B104300AD20B1 /* RealEstateTableViewCell.swift in Sources */,
+				A5345DF3262B2FEC00AD20B1 /* RealEstateTableViewCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +677,7 @@
 		};
 		A5345DA8262AEDDF00AD20B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965A998791F6D5488C6C964D /* Pods-RealEstateViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +697,7 @@
 		};
 		A5345DA9262AEDDF00AD20B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBFEA1A9A793008C66D5E32 /* Pods-RealEstateViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +717,7 @@
 		};
 		A5345DAB262AEDDF00AD20B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D37D101E94DED5C619B8EC7 /* Pods-RealEstateViewerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +740,7 @@
 		};
 		A5345DAC262AEDDF00AD20B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F78CBFC5681FFECCEE7448 /* Pods-RealEstateViewerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +763,7 @@
 		};
 		A5345DAE262AEDDF00AD20B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E8669957D80ED56CD341A36 /* Pods-RealEstateViewer-RealEstateViewerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +784,7 @@
 		};
 		A5345DAF262AEDDF00AD20B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41985B14C6B6AF25B14528C1 /* Pods-RealEstateViewer-RealEstateViewerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
